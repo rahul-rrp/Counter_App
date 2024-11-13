@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Counter App</title>
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMm3MXogSmQfBiVZ6gN3A9z61gU9twxvF7Btm3a" crossorigin="anonymous">
+    
+    <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,43 +18,40 @@
         <h1 class="app_name">Counter App</h1>
 
         <div class="container">
-            <button id="decre_btn">
-                <i class="fa-solid fa-minus"></i>
+            <button id="decre_btn" class="decrement-btn">
+                -
             </button>
 
-            <div id="counter_box"></div>
+            <div id="counter_box" class="counter-display"></div>
 
-            <button id="incre_btn">
-                <i class="fa-solid fa-plus"></i>
+            <button id="incre_btn" class="increment-btn">
+                +
             </button>
         </div>
 
         <div class="container_2">
-            <button id="decre_ten_btn">
-                <img src="minus-10.png" alt="">
+            <button id="decre_ten_btn" class="decrement-ten-btn">
+                <img src="minus-10.png" alt="Decrement by 10">
             </button>
 
-            <button id="reset_btn">
+            <button id="reset_btn" class="reset-btn">
                 Reset
             </button>
 
-            <button id="incre_ten_btn">
-                <img src="plus-10.png" alt="">
+            <button id="incre_ten_btn" class="increment-ten-btn">
+                <img src="plus-10.png" alt="Increment by 10">
             </button>
         </div>
     </div>
 
-    <!-- increment and decrement sound -->
+    <!-- Sound files -->
     <audio src="04_Javascript_Mini_Projects_01_Counter_App_sounds_coin.mp3" id="coin_sound" class="sound" controls></audio>
     <audio src="fireball.mp3" id="fireball_sound" class="sound" controls></audio>
-
-    <!-- increment and decrement(by 10) sound   -->
     <audio src="pause.mp3" id="pause_sound" class="sound" controls></audio>
     <audio src="pipe.mp3" id="pipe_sound" class="sound" controls></audio>
-
-    <!-- reset sound -->
     <audio src="stomp.mp3" id="stomp_sound" class="sound" controls></audio>
-    
+
+    <!-- Custom JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
